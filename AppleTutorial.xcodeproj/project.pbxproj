@@ -11,6 +11,8 @@
 		5C953FE1288D777A00D2C0A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C953FE0288D777A00D2C0A4 /* ContentView.swift */; };
 		5C953FE3288D777B00D2C0A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C953FE2288D777B00D2C0A4 /* Assets.xcassets */; };
 		5C953FE6288D777B00D2C0A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C953FE5288D777B00D2C0A4 /* Preview Assets.xcassets */; };
+		5C953FED288EA8F900D2C0A4 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C953FEC288EA8F900D2C0A4 /* ImageView.swift */; };
+		5C953FEF288EAA6A00D2C0A4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C953FEE288EAA6A00D2C0A4 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		5C953FE0288D777A00D2C0A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C953FE2288D777B00D2C0A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C953FE5288D777B00D2C0A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5C953FEC288EA8F900D2C0A4 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		5C953FEE288EAA6A00D2C0A4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				5C953FDE288D777A00D2C0A4 /* AppleTutorialApp.swift */,
 				5C953FE0288D777A00D2C0A4 /* ContentView.swift */,
+				5C953FEC288EA8F900D2C0A4 /* ImageView.swift */,
+				5C953FEE288EAA6A00D2C0A4 /* MapView.swift */,
 				5C953FE2288D777B00D2C0A4 /* Assets.xcassets */,
 				5C953FE4288D777B00D2C0A4 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C953FE1288D777A00D2C0A4 /* ContentView.swift in Sources */,
+				5C953FEF288EAA6A00D2C0A4 /* MapView.swift in Sources */,
 				5C953FDF288D777A00D2C0A4 /* AppleTutorialApp.swift in Sources */,
+				5C953FED288EA8F900D2C0A4 /* ImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
