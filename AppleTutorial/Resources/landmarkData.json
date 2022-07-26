@@ -9,8 +9,8 @@
         "isFavorite": true,
         "park": "Charyn Canyon National Park",
         "coordinates": {
-            "longitude": 43.351233,
-            "latitude": 79.079434
+            "longitude": 79.079434,
+            "latitude": 43.351233
         },
         "description": "Charyn Canyon is a national park in Kazakhstan, stretching along the Charyn River, including Charyn Canyon. Special thanks to my love for showing me such a beautiful place.",
         "imageName": "CharynCanyon"
