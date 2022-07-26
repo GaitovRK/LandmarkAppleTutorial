@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ImageView: View {
+    
+    var image: Image
+    
     var body: some View {
         Image("CharynCanyon")
             .resizable()
@@ -22,6 +25,6 @@ struct ImageView: View {
 
 struct ImageView_Previews: PreviewProvider {
     static var previews: some View {
-        ImageView()
+        ImageView(image: Image("CharynCanyon"))
     }
 }

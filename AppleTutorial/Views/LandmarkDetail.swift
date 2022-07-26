@@ -8,32 +8,37 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    
+    var landmark: Landmark
+    
     var body: some View {
-        VStack {
+        ScrollView {
             
-            MapView()
+            MapView(coordinate: landmark.locationCoordinates)
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
             
-            ImageView()
+            ImageView(image: landmark.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
-                Text("Charyn Canyon")
+                Text(landmark.name)
                     .font(.title)
                 
                 HStack {
-                    Text("Charyn, Tamerlik")
+                    Text(landmark.park)
                     Spacer()
-                    Text("Kazakhstan")
+                    Text(landmark.state)
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
                 
                 Divider()
                 
-                Text("Charyn Canyon is a national park in Kazakhstan, stretching along the Charyn River, including Charyn Canyon. Special thanks to my love for showing me such a beautiful place.")
+                Text("About \(landmark.name)")
+                    .font(.title2)
+                Text(landmark.description)
                     .font(.body)
                 
             }
@@ -41,11 +46,13 @@ struct LandmarkDetail: View {
             
             Spacer()
         }
+        .navigationTitle(landmark.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkDetail()
+        LandmarkDetail(landmark: landmarks[2])
     }
 }
