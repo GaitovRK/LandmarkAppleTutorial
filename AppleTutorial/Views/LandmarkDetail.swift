@@ -1,39 +1,44 @@
 //
-//  ContentView.swift
+//  LandmarkDetail.swift
 //  AppleTutorial
 //
-//  Created by Rashid Gaitov on 24.07.2022.
+//  Created by Rashid Gaitov on 25.07.2022.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandmarkDetail: View {
+    
+    var landmark: Landmark
+    
     var body: some View {
-        VStack {
+        ScrollView {
             
-            MapView()
+            MapView(coordinate: landmark.locationCoordinates)
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
             
-            ImageView()
+            ImageView(image: landmark.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
-                Text("Charyn Canyon")
+                Text(landmark.name)
                     .font(.title)
                 
                 HStack {
-                    Text("Charyn, Tamerlik")
+                    Text(landmark.park)
                     Spacer()
-                    Text("Kazakhstan")
+                    Text(landmark.state)
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
                 
                 Divider()
                 
-                Text("Charyn Canyon is a national park in Kazakhstan, stretching along the Charyn River, including Charyn Canyon. Special thanks to my love for showing me such a beautiful place.")
+                Text("About \(landmark.name)")
+                    .font(.title2)
+                Text(landmark.description)
                     .font(.body)
                 
             }
@@ -41,11 +46,13 @@ struct ContentView: View {
             
             Spacer()
         }
+        .navigationTitle(landmark.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LandmarkDetail(landmark: landmarks[2])
     }
 }
