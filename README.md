@@ -1,5 +1,5 @@
 # LandmarkAppleTutorial
-Application created by learning the Apple Developer tutorial. The application is based on the SwiftUI Framework and MapKit Library.
+Application created while learning the Apple Developer tutorials. The application is based on the SwiftUI Framework and MapKit Library.
 
 ### Demo:
 
